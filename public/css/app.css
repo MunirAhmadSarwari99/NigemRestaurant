@@ -1,0 +1,6 @@
+.cursor-pointer:hover{
+    cursor: pointer;
+}
+.inline-form{
+    display: inline-block;
+}
