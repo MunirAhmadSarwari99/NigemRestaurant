@@ -19,12 +19,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-////    return view('welcome');
-//});
+Route::get('/admin', function () {
+    return "Admin";
+});
 
 Route::resource('/', HomeController::class);
-Route::resource('Order', OrderedController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -41,3 +40,4 @@ require __DIR__.'/auth.php';
 Route::resource('Customer', CustomerController::class);
 Route::resource('Category', CategoryController::class);
 Route::resource('Food', FoodController::class);
+Route::resource('Order', OrderedController::class);
